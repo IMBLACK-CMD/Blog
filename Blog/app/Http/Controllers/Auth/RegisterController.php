@@ -38,7 +38,7 @@ class RegisterController extends Controller
              'password'=>Hash::make($request->password),
 
         ]);
-       Auth::attempt(['email', 'password']);
+         //this is the place  i am getting errors
         return redirect()->route('login');
 
     }
